@@ -1,1 +1,36 @@
-Git Commands
+25/04/2020:
+
+git add .
+git commit -m "commit message"
+git remote add origin <repository url>
+git push origin <branch name>
+git pull
+git push origin master -f
+git log --online
+
+git status -- gives you the status of changed files and which are need to be staged and committed
+When git status is checked before staging files, it gives the list of files that need to be staged.
+If it is after staging files, it will give you the list of files that need to be committed.
+
+unstage a staged file: git rm --cached <file> 
+
+git push --no-verify
+
+git remote -v (to know to which repo origin is pointed to)
+
+to create a new directory inside a directory : mkdir <new directory name>
+
+to create a new file inside a directory: touch <file name> --doesnt work on windows
+
+ls - to list the files in a directory
+
+mkdir - to list down all the directories in a directory
+
+rm <file name> : to remove file from directory
+
+rmdir <diectory name> : to remmove directory
+
+git init (to initiate a empty git repo in side our local directory)
+
+
+
