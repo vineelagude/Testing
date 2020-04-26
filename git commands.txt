@@ -34,3 +34,11 @@ git init (to initiate a empty git repo in side our local directory)
 
 
 
+26/04/2020
+
+Undoing things:
+1. Checkout commit 
+2. Revert commit -- reverting a commit in between. It's like deletion. 
+3. Reset commit  -- permanant deletion
+
+git log --oneline	--> to know the latest commits
