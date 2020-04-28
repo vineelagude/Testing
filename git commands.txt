@@ -41,4 +41,47 @@ Undoing things:
 2. Revert commit -- reverting a commit in between. It's like deletion. 
 3. Reset commit  -- permanant deletion
 
-git log --oneline	--> to know the latest commits
+git log --oneline	--> to know the latest commits  -->gives unique id for each commit
+
+git checkout <unique ID of commit>  -- removes the commit of uniquiID you have provided.
+
+git revert <unique ID of commit> -- removes only that particular commit -- donn't remove the commit of uniquiID but adds
+another commit saying revert uniqueID commit
+
+git reset <unique ID of next commit ID until to which you want to delete>
+git reset <uniqueID> --hard  -- to remove till particular commit
+
+
+Branches:
+git branch <branch name>  --> to create new branch
+git branch -a --> to show all the branches in repo
+
+generally when we connect to repo, master will be the default branch. To switch branches we need to 
+git checkout <branchname>
+
+to delete a branch, first you need to switch to master branch and then
+git branch -d <branch name> and then for confirmation we need to
+git branch -D <branch name>
+
+to create a branch and to checkout at a time:
+git checkout -b <branch name>
+
+
+Merging branches and dealing with conflicts:
+Lets say, I want to merge my code from branch-a to master. For that you need to checkout to master branch frist.
+git merge <branch name>
+
+
+Cloning git repo:
+create a new repo in github. Copy the URL. in cmmd, go to the directory, git clone <git repo url>]
+When we clone the repo, origin will be automatically set up to master of repo. use remote -v to check to which origin is set up to
+
+
+Initiating git:
+go to the directory, git init.
+
+
+
+
+
+
