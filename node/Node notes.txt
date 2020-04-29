@@ -1,0 +1,1 @@
+node -v :for node version installed in the system
